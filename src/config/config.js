@@ -29,7 +29,7 @@ const config = {
   },
   pages: {
     LandingPage: lazy(() => import('../pages/Home/Home')),
-    PageNotFound: lazy(() => import('../pages/Home/Home')),
+    PageNotFound: lazy(() => import('../pages/HikingFrontend/Announcement')),
   },
 }
 
