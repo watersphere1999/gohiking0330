@@ -6,6 +6,8 @@ import { Route } from 'react-router-dom'
 import PersonalPage from 'pages/PersonalPage'
 import EditAccount from 'pages/PersonalPage/EditAccount'
 import CropAvatar from 'pages/PersonalPage/CropAvatar'
+//for githubpages
+import { BrowserRouter } from 'react-router-dom';
 
 
 // const SignIn = lazy(() => import('../pages/SignIn/SignIn'))
@@ -60,7 +62,7 @@ const routes = [
     exact
     component={PasswordReset}
   />,
-  
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
   <Route path="/searchPage" exact component={SearchPage} />,
   <Route path="/searchQuick/:id" exact component={SearchQuick} />,
   <Route path="/searchResult" exact component={SearchResult} />,
@@ -78,6 +80,7 @@ const routes = [
   <Route path="/attraction" exact component={Attraction}/>,
   <Route path="/pathway" exact component={Pathway}/>,
   <Route path="/announcement" exact component={Announcement}/>,
+  </BrowserRouter>,
   <AuthorizedRoute path="/my_account" exact component={MyAccount} />,
   <AuthorizedRoute path="/home" exact component={Home} />,
   <AuthorizedRoute path="/dialog_demo" exact component={DialogDemo} />,
