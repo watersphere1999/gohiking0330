@@ -47,7 +47,6 @@ const Announcement = lazy(()=>import('../pages/HikingFrontend/Announcement'));
 
 
 const routes = [
-  <BrowserRouter basename={ process.env.PUBLIC_URL }>
   <UnauthorizedRoute path="/signin" redirectTo="/" exact component={SignIn} />,
   <UnauthorizedRoute path="/signup" redirectTo="/" exact component={SignUp} />,
   <UnauthorizedRoute path="/verify2" redirectTo="/" exact component={Verify2} />,
@@ -84,9 +83,7 @@ const routes = [
   <AuthorizedRoute path="/toast_demo" exact component={ToastDemo} />,
   <AuthorizedRoute path="/filter_demo" exact component={FilterDemo} />,
   <AuthorizedRoute path="/list_page_demo" exact component={ListPageDemo} />,
-  <AuthorizedRoute path="/tabs_demo" exact component={TabsDemo} />,
-  </BrowserRouter>
-
+  <AuthorizedRoute path="/tabs_demo" exact component={TabsDemo} />
 
 ]
 
