@@ -45,6 +45,7 @@ const Announcement = lazy(()=>import('../pages/HikingFrontend/Announcement'));
 
 
 const routes = [
+  
   <UnauthorizedRoute path="/signin" redirectTo="/" exact component={SignIn} />,
   <UnauthorizedRoute path="/signup" redirectTo="/" exact component={SignUp} />,
   <UnauthorizedRoute path="/verify2" redirectTo="/" exact component={Verify2} />,
@@ -79,7 +80,6 @@ const routes = [
   <Route path="/announcement" exact component={Announcement}/>,
   <AuthorizedRoute path="/my_account" exact component={MyAccount} />,
   <AuthorizedRoute path="/home" exact component={Home} />,
-
   <AuthorizedRoute path="/dialog_demo" exact component={DialogDemo} />,
   <AuthorizedRoute path="/toast_demo" exact component={ToastDemo} />,
   <AuthorizedRoute path="/filter_demo" exact component={FilterDemo} />,
