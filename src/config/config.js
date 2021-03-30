@@ -28,8 +28,8 @@ const config = {
     defaultIsRTL: false //change this to true for Right to Left Language support
   },
   pages: {
-    LandingPage: lazy(() => import('../pages/LandingPage/LandingPage')),
-    PageNotFound: lazy(() => import('../pages/PageNotFound/PageNotFound')),
+    LandingPage: lazy(() => import('../pages/Home/Home')),
+    PageNotFound: lazy(() => import('../pages/Home/Home')),
   },
 }
 

@@ -4,6 +4,4 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom';
 import './axios';
 
-render(
-<App />
-, document.getElementById('root'))
+render(<App />, document.getElementById('root'))
