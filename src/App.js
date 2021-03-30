@@ -9,9 +9,7 @@ const config = merge(MUIConfig, _config)
 export default class Demo extends Component {
   render() {
     return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App config={config}/>
-    </BrowserRouter>
     )
   }
 }
