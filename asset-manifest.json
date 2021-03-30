@@ -12,8 +12,8 @@
     "static/js/3.faf9fd9d.chunk.js.map": "/gohiking0330/static/js/3.faf9fd9d.chunk.js.map",
     "static/js/4.36587153.chunk.js": "/gohiking0330/static/js/4.36587153.chunk.js",
     "static/js/4.36587153.chunk.js.map": "/gohiking0330/static/js/4.36587153.chunk.js.map",
-    "main.js": "/gohiking0330/static/js/main.bec5e46b.chunk.js",
-    "main.js.map": "/gohiking0330/static/js/main.bec5e46b.chunk.js.map",
+    "main.js": "/gohiking0330/static/js/main.abc06abb.chunk.js",
+    "main.js.map": "/gohiking0330/static/js/main.abc06abb.chunk.js.map",
     "runtime-main.js": "/gohiking0330/static/js/runtime-main.ee110d28.js",
     "runtime-main.js.map": "/gohiking0330/static/js/runtime-main.ee110d28.js.map",
     "static/js/7.513a2a03.chunk.js": "/gohiking0330/static/js/7.513a2a03.chunk.js",
@@ -123,6 +123,6 @@
   "entrypoints": [
     "static/js/runtime-main.ee110d28.js",
     "static/js/7.513a2a03.chunk.js",
-    "static/js/main.bec5e46b.chunk.js"
+    "static/js/main.abc06abb.chunk.js"
   ]
 }
