@@ -32,18 +32,18 @@ const SearchResult = lazy(() => import('../pages/SearchResult/SearchResult'))
 const CollectPage = lazy(() => import('../pages/CollectPage/CollectPage'))
 const CollectPage2 = lazy(() => import('../pages/CollectPage/CollectPage2'))
 
-const PrivacyPolicy = lazy(()=> import('../pages/PrivacyPolicy/PrivacyPolicy'))
-const AboutUs =lazy(()=>import('../pages/AboutUs/AboutUs'))
+const PrivacyPolicy = lazy(() => import('../pages/PrivacyPolicy/PrivacyPolicy'))
+const AboutUs = lazy(() => import('../pages/AboutUs/AboutUs'))
 const ColumnPage = lazy(() => import('../pages/ColumnPage/ColumnPage'))
 
 const Login1_1 = lazy(() => import('../pages/HikingFrontend/Login1_1'))
 const Login1_2 = lazy(() => import('../pages/HikingFrontend/Login1_2'))
 const Register0_1 = lazy(() => import('../pages/HikingFrontend/Register0_1'))
 const ResetPassword = lazy(() => import('../pages/HikingFrontend/ResetPassword'))
-const NearByPathway = lazy(()=>import('../pages/HikingFrontend/NearByPathway'));
-const Attraction = lazy(()=>import('../pages/HikingFrontend/Attraction'));
-const Pathway = lazy(()=>import('../pages/HikingFrontend/Pathway'));
-const Announcement = lazy(()=>import('../pages/HikingFrontend/Announcement'));
+const NearByPathway = lazy(() => import('../pages/HikingFrontend/NearByPathway'));
+const Attraction = lazy(() => import('../pages/HikingFrontend/Attraction'));
+const Pathway = lazy(() => import('../pages/HikingFrontend/Pathway'));
+const Announcement = lazy(() => import('../pages/HikingFrontend/Announcement'));
 
 
 const routes = [
@@ -60,6 +60,7 @@ const routes = [
     exact
     component={PasswordReset}
   />,
+  <BrowserRouter basename={process.env.PUBLIC_URL}>,
   <Route path="/searchPage" exact component={SearchPage} />,
   <Route path="/searchQuick/:id" exact component={SearchQuick} />,
   <Route path="/searchResult" exact component={SearchResult} />,
@@ -73,10 +74,11 @@ const routes = [
   <Route path="/collectPage" exact component={CollectPage} />,
   <Route path="/collectPage2" exact component={CollectPage2} />,
   <Route path="/columnPage/:id" exact component={ColumnPage} />,
-  <Route path="/NearByPathway" exact component={NearByPathway}/>,
-  <Route path="/attraction" exact component={Attraction}/>,
-  <Route path="/pathway" exact component={Pathway}/>,
-  <Route path="/announcement" exact component={Announcement}/>,
+  <Route path="/NearByPathway" exact component={NearByPathway} />,
+  <Route path="/attraction" exact component={Attraction} />,
+  <Route path="/pathway" exact component={Pathway} />,
+  <Route path="/announcement" exact component={Announcement} />,
+  </BrowserRouter>,
   <AuthorizedRoute path="/my_account" exact component={MyAccount} />,
   <AuthorizedRoute path="/home" exact component={Home} />,
   <AuthorizedRoute path="/dialog_demo" exact component={DialogDemo} />,
